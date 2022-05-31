@@ -1,14 +1,10 @@
 pkgs:
   wasmer:
     version: 0.0.0
-    root: src/main.zig
     description: Zig bindings for the Wasmer WebAssembly runtime
     license: MIT
     source_url: "https://github.com/zigwasm/wasmer-zig"
+    root: src/main.zig
 deps:
   wasm:
-    src:
-      github:
-        user: zigwasm
-        repo: wasm-zig
-        ref: main
+    local: ../wasm-zig
