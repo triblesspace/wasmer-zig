@@ -8,6 +8,7 @@ pub const Store = wasm.Store;
 pub const Module = wasm.Module;
 pub const Instance = wasm.Instance;
 pub const Extern = wasm.Extern;
+pub const Memory = wasm.Memory;
 pub const Func = wasm.Func;
 
 pub fn lastError(allocator: std.mem.Allocator) ![:0]u8 {
